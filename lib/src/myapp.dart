@@ -1,4 +1,4 @@
-import 'package:contactapp/src/pages/mycontacts.dart';
+import 'package:contactapp/src/contacts/pages/mycontacts.dart';
 import 'package:flutter/material.dart';
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);

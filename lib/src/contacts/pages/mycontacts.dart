@@ -1,9 +1,9 @@
-import 'package:contactapp/src/pages/addcontact.dart';
+import 'package:contactapp/src/contacts/pages/addcontact.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:contacts_service/contacts_service.dart';
-import '../utils/launcher_utility.dart';
+import '../../utils/launcher_utility.dart';
 import 'contactdetails.dart';
 
 class MyContacts extends StatefulWidget {
@@ -135,12 +135,13 @@ class _MyContactsState extends State<MyContacts> {
                                 leading: CircleAvatar(
                                   radius: 20,
                                   child: Visibility(
-                                      visible: itemcontact.avatar != null,
-                                      replacement: const CircleAvatar(
-                                          child: Icon(Icons.person)),
+                                      visible: itemcontact.avatar != null || ((itemcontact.avatar?.length??0)>0),
+                                      replacement: const Icon(Icons.person),
                                       child: CircleAvatar(
                                           backgroundImage: MemoryImage(
                                               itemcontact.avatar!))),
+                                          // backgroundImage: MemoryImage(
+                                          //     itemcontact.avatar!))),
                                 ),
                                 title: Text(
                                     filteredData[pos].displayName ?? "Null"),

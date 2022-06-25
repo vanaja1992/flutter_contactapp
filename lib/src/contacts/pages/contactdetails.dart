@@ -1,7 +1,7 @@
-import '../utils/form_validation_utility.dart';
+import '../../utils/form_validation_utility.dart';
 import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/material.dart';
-import '../utils/launcher_utility.dart';
+import '../../utils/launcher_utility.dart';
 
 class ContactDetails extends StatefulWidget {
   final Contact contact;

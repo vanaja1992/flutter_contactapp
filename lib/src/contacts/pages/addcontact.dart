@@ -1,4 +1,4 @@
-import 'package:contactapp/src/pages/mycontacts.dart';
+import 'package:contactapp/src/contacts/pages/mycontacts.dart';
 import 'package:contactapp/src/utils/form_validation_utility.dart';
 import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/material.dart';
